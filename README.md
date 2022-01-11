@@ -4,5 +4,5 @@
 |Nom|Prénom|
 |--|--|
 *Belhouari* | *Amira*|
-*Idres* | *Mohend*|
+*Idres* | *Mohand*|
 *Ouatar* | *Hakim*|
