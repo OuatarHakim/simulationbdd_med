@@ -61,11 +61,12 @@ public class Requete {
 
     }
 
-    public void envoie(ArrayList arrivants ,  double p1, double p2 , double p3){
+    public ArrayList envoie(ArrayList arrivants ,  double p1, double p2 , double p3){
         ArrayList serveur1= new ArrayList();
         ArrayList serveur2= new ArrayList();
         ArrayList serveur3= new ArrayList();
 
+        ArrayList serveurs = new ArrayList();
 
 
 for (int i = 0 ; i < arrivants.size();i++) {
@@ -84,15 +85,22 @@ for (int i = 0 ; i < arrivants.size();i++) {
     } else if (res <= p1 + p2 + p3) {
         System.out.println("Serveur 3");
         serveur3.add("Client n° ="+ arrivants.get(i)+" "+service(1, 0.5)+"\n");
-
     }
 }
 
-        System.out.println("Serveur 1" +serveur1);
-        System.out.println("Serveur 2" +serveur2);
-        System.out.println("Serveur 3" +serveur3);
+     //   System.out.println("Serveur 1" +serveur1);
+      //  System.out.println("Serveur 2" +serveur2);
+      //  System.out.println("Serveur 3" +serveur3);
+
+
+        serveurs.add( "Serveur 1 "+serveur1+"\n Serveur 2 "+ serveur2 + "\nServeur 3" +serveur3);
+        System.out.println(serveurs);
+
+        return serveurs ;
 
     }
+
+   // public ArrayList sortie(ArrayList serveur , )
 
 
   /* public ArrayList cordinateur(ArrayList<Double> arrivants){

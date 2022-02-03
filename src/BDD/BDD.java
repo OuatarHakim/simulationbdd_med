@@ -9,7 +9,8 @@ public class BDD {
 
         ArrayList arrivants  = rq.arrivant(20 , 1);
         System.out.println("Liste des arrivants : "+arrivants );
-    rq.envoie(arrivants, 0.25, 0.5, 0.25);
+   ArrayList serveurs =  rq.envoie(arrivants, 0.25, 0.5, 0.25);
+
     }
 
     }
