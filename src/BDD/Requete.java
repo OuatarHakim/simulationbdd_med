@@ -67,22 +67,34 @@ public class Requete {
         ArrayList serveur3= new ArrayList();
 
 
-        //ILAQ UN DEUX CHIFFRES APRES LA VIRGULES
 
-        double poba = new Random().nextDouble();
-        double res = Math.round(poba * 100.0) / 100.0;
+for (int i = 0 ; i < arrivants.size();i++) {
+    double poba = new Random().nextDouble();
+    double res = Math.round(poba * 100.0) / 100.0;
+    if (res <= p1) {
+        System.out.println("Serveur 1");
+        serveur1.add("Client n° ="+ arrivants.get(i)+" "+service(1, 0.5)+"\n");
+        //System.out.println(serveur1);
 
-        System.out.print(res);
+    } else if (res <= p1 + p2) {
+        System.out.println("Serveur 2");
+        serveur2.add("Client n° ="+ arrivants.get(i)+" "+service(1, 0.5)+"\n");
+      //  System.out.println(serveur2);
 
-        for (int i = 0 ; i< arrivants.size(); i++) {
-            if (res == p1)
-                System.out.println("chey3it serveur 1");
-            if (res == p2)
-                System.out.println("chey3it serveur 2");
-            if (res == p3)
-                System.out.println("chey3it serveur 3");
-        }
+    } else if (res <= p1 + p2 + p3) {
+        System.out.println("Serveur 3");
+        serveur3.add("Client n° ="+ arrivants.get(i)+" "+service(1, 0.5)+"\n");
+
     }
+}
+
+        System.out.println("Serveur 1" +serveur1);
+        System.out.println("Serveur 2" +serveur2);
+        System.out.println("Serveur 3" +serveur3);
+
+    }
+
+
   /* public ArrayList cordinateur(ArrayList<Double> arrivants){
         ArrayList<Double> serveurs = new ArrayList<Double>() ;
 
