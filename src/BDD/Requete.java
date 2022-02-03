@@ -100,7 +100,12 @@ for (int i = 0 ; i < arrivants.size();i++) {
 
     }
 
-   // public ArrayList sortie(ArrayList serveur , )
+    public ArrayList sortie(ArrayList serveurs , ArrayList arrivants ){
+        ArrayList list_finale = new ArrayList();
+
+
+        return list_finale;
+    }
 
 
   /* public ArrayList cordinateur(ArrayList<Double> arrivants){
